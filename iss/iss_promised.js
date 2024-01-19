@@ -24,5 +24,5 @@ const nextISSTimesForMyLocation = function() {
       return response;
     });
 };
-
+//export all factions
 module.exports = { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes,nextISSTimesForMyLocation };

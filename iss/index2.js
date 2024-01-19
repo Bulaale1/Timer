@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 /* eslint-disable no-extra-semi */
 /* eslint-disable linebreak-style */
+//require all exported functions
 const { fetchMyIP,fetchCoordsByIP,fetchISSFlyOverTimes,nextISSTimesForMyLocation ,printPassTimes } = require('./iss_promised');
 
 fetchMyIP()
@@ -12,5 +13,5 @@ fetchMyIP()
     printPassTimes(passTimes);
   })
   .catch((error) => {
-    console.log("It didn't work: ", error.message);
+    console.log("Unhandled Promise Rejection Warning: ", error.message);
   });
